@@ -1,10 +1,3 @@
-/*
-# Dayflow HRMS — Auto-create profile on signup
-
-Trigger that fires on INSERT into auth.users, creating a corresponding
-public.profiles row. The profile's role and employee_id are read from
-the user's raw_user_meta_data (set during signUp).
-*/
 
 CREATE OR REPLACE FUNCTION public.handle_new_user()
 RETURNS trigger
