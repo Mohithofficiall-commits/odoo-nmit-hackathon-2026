@@ -134,11 +134,12 @@ export default function NotificationBell({
               </h3>
 
               <p className="text-xs text-slate-500 dark:text-slate-400">
-                {unreadCount > 0
+                unreadCount &gt; 0
                   ? `${unreadCount} unread notification${
                       unreadCount > 1 ? 's' : ''
                     }`
-                  : 'You're all caught up'}
+                  : 'You're all caught up'&rbrace;
+                
               </p>
             </div>
 
