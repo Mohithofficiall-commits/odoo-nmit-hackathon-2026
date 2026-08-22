@@ -1,0 +1,20 @@
+# Dayflow HRMS — Database Schema & Migration Guide
+
+This directory contains the database structure and SQL migrations for the Dayflow HR Management System built on Supabase.
+
+## Migration Order
+1. `20260822041944_00_set_updated_at_function.sql` - Trigger helper
+2. `20260822041835_01_is_admin_helper.sql` - Role check function
+3. `20260822041847_02_profiles_table.sql` - Auth profile references
+4. `20260822041900_03_employees_table.sql` - Employee records
+5. `20260822041912_04_attendance_table.sql` - Attendance logs
+6. `20260822041924_05_leave_requests_table.sql` - Leave management
+7. `20260822041935_06_payroll_table.sql` - Salary structures
+8. `20260822050000_10_audit_logs_table.sql` - Audit trail
+9. `20260822060000_11_announcements_table.sql` - Announcements table
+10. `20260822070000_12_leave_balances_table.sql` - Quotas & balances
+11. `20260822080000_13_holidays_calendar_table.sql` - Public holidays
+12. `20260822090000_14_stored_procedures.sql` - Analytical RPCs
+13. `20260822100000_15_deduct_leave_trigger.sql` - Automatic deduction trigger
+14. `20260822110000_16_performance_indexes.sql` - Indexing
+15. `20260822120000_17_realtime_publication.sql` - Realtime channels
