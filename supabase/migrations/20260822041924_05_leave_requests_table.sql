@@ -1,14 +1,3 @@
-/*
-# Dayflow HRMS — Leave requests table
-
-Leave applications and approvals.
-Types: paid, sick, unpaid. Status: pending, approved, rejected.
-
-## Security
-- RLS enabled.
-- Employees SELECT/INSERT own; admins SELECT all and UPDATE any.
-*/
-
 CREATE TABLE IF NOT EXISTS public.leave_requests (
   id            uuid PRIMARY KEY DEFAULT gen_random_uuid(),
   employee_id   uuid NOT NULL REFERENCES public.profiles(id) ON DELETE CASCADE,
