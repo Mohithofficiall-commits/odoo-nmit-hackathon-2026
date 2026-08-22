@@ -1,16 +1,3 @@
-/*
-# Dayflow HRMS — Profiles table
-
-Extends auth.users with app-level data: full_name, email, role, employee_id,
-avatar_url, phone, address. 1:1 with auth.users.
-
-## Security
-- RLS enabled.
-- All authenticated users can SELECT (needed for directory).
-- Users can UPDATE their own profile; admins can update any.
-- Only admins can INSERT.
-*/
-
 CREATE TABLE IF NOT EXISTS public.profiles (
   id          uuid PRIMARY KEY REFERENCES auth.users(id) ON DELETE CASCADE,
   full_name   text NOT NULL,
