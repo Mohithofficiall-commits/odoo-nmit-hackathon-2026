@@ -230,10 +230,10 @@ npm run dev
 
 | Name | Role | GitHub |
 |---|---|---|
-| MOHITH L| Frontend | [@REPLACE_HANDLE_1](https://github.com/Mohithofficiall-commits) |
-| KAVIN R| Backend | [@REPLACE_HANDLE_2](https://github.com/Kavin-124) |
-| MOULITHARAN IR| Database | [@REPLACE_HANDLE_3](https://github.com/Moulitharan0107) |
-| NAGARAJ V | UI/UX | [@REPLACE_HANDLE_4](https://github.com/nagarajvenkatachalam1-ctrl) |
+| MOHITH L| Frontend | [CLICK ME](https://github.com/Mohithofficiall-commits) |
+| KAVIN R| Backend | [CLICK ME](https://github.com/Kavin-124) |
+| MOULITHARAN IR| Database | [CLICK ME](https://github.com/Moulitharan0107) |
+| NAGARAJ V | UI/UX | [CLICK ME](https://github.com/nagarajvenkatachalam1-ctrl) |
 
 </details>
 
