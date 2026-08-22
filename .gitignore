@@ -1,3 +1,4 @@
+# Logs
 logs
 *.log
 npm-debug.log*
@@ -6,18 +7,55 @@ yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
 
-node_modules
-dist
-dist-ssr
+# Dependencies
+node_modules/
+
+# Build output
+dist/
+dist-ssr/
+coverage/
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+!.env.example
+
+# Local configuration
 *.local
 
+# Vite
+.vite/
+
+# VS Code
 .vscode/*
 !.vscode/extensions.json
-.idea
+!.vscode/settings.json
+
+# JetBrains
+.idea/
+
+# macOS
 .DS_Store
+
+# Windows
+Thumbs.db
+Desktop.ini
+
+# TypeScript
+*.tsbuildinfo
+
+# Temporary files
+*.tmp
+*.temp
+*.swp
+*.swo
+
+# IDE / Visual Studio
 *.suo
 *.ntvs*
 *.njsproj
 *.sln
-*.sw?
-.env
+
+# Debug
+.nyc_output/
