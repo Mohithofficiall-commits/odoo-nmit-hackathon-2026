@@ -75,6 +75,48 @@ export interface Payroll {
   updated_at: string;
 }
 
+export interface AuditLog {
+  id: string;
+  actor_id: string | null;
+  action: string;
+  target_entity: string;
+  target_id: string | null;
+  details: Record<string, any>;
+  created_at: string;
+}
+
+export interface Announcement {
+  id: string;
+  title: string;
+  content: string;
+  author_id: string | null;
+  category: string;
+  is_pinned: boolean;
+  created_at: string;
+  updated_at: string;
+}
+
+export interface LeaveBalance {
+  id: string;
+  employee_id: string;
+  paid_leave_total: number;
+  paid_leave_used: number;
+  sick_leave_total: number;
+  sick_leave_used: number;
+  casual_leave_total: number;
+  casual_leave_used: number;
+  year: number;
+  updated_at: string;
+}
+
+export interface Holiday {
+  id: string;
+  title: string;
+  holiday_date: string;
+  description: string | null;
+  created_at: string;
+}
+
 export interface LeaveWithProfile extends LeaveRequest {
   profiles: { full_name: string; employee_id: string | null; avatar_url: string | null } | null;
 }
