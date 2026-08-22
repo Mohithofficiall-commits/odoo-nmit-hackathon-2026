@@ -1,15 +1,3 @@
-/*
-# Dayflow HRMS — Attendance table
-
-Daily check-in/check-out records. Unique per (employee_id, date).
-Status: present, absent, half_day, leave, weekend.
-work_hours computed on check-out.
-
-## Security
-- RLS enabled.
-- Employees SELECT/INSERT/UPDATE own records.
-- Admins have full access.
-*/
 
 CREATE TABLE IF NOT EXISTS public.attendance (
   id          uuid PRIMARY KEY DEFAULT gen_random_uuid(),
