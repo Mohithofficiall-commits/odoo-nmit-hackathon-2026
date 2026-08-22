@@ -91,6 +91,7 @@ export function AuthProvider({ children }: { children: ReactNode }) {
 
     if (error) return { error: error.message };
 
+    
     if (result.user) {
       // Update app_metadata with role for RLS
       // Note: this is done via the trigger + we need to set app_metadata
