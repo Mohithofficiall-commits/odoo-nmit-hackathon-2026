@@ -5,24 +5,56 @@ import reactRefresh from 'eslint-plugin-react-refresh';
 import tseslint from 'typescript-eslint';
 
 export default tseslint.config(
-  { ignores: ['dist'] },
   {
-    extends: [js.configs.recommended, ...tseslint.configs.recommended],
+    ignores: ['dist', 'node_modules'],
+  },
+
+  {
     files: ['**/*.{ts,tsx}'],
+    extends: [
+      js.configs.recommended,
+      ...tseslint.configs.recommended,
+    ],
+
     languageOptions: {
-      ecmaVersion: 2020,
+      ecmaVersion: 'latest',
+      sourceType: 'module',
       globals: globals.browser,
     },
+
     plugins: {
       'react-hooks': reactHooks,
       'react-refresh': reactRefresh,
     },
+
     rules: {
+      // React Hooks
       ...reactHooks.configs.recommended.rules,
+
+      // React Fast Refresh
       'react-refresh/only-export-components': [
         'warn',
-        { allowConstantExport: true },
+        {
+          allowConstantExport: true,
+        },
       ],
+
+      // TypeScript / code quality
+      '@typescript-eslint/no-unused-vars': [
+        'warn',
+        {
+          argsIgnorePattern: '^_',
+          varsIgnorePattern: '^_',
+          caughtErrorsIgnorePattern: '^_',
+        },
+      ],
+
+      '@typescript-eslint/no-explicit-any': 'warn',
+
+      // General JavaScript quality
+      'no-console': 'warn',
+      'no-debugger': 'error',
+      'no-duplicate-imports': 'error',
     },
   }
 );
