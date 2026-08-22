@@ -26,7 +26,7 @@
 
 ---
 
-## 🔗 Live Demo
+## 🔗 Live Demo Model
 
 <p align="center">
   <a href="https://human-resource-manag-s0rp.bolt.host">
