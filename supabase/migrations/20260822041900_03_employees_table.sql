@@ -1,15 +1,3 @@
-/*
-# Dayflow HRMS — Employees table
-
-HR-managed employment record. One row per employee profile.
-Fields: department, designation, employment_type, join_date, status, manager, work_location.
-
-## Security
-- RLS enabled.
-- All authenticated users can SELECT (directory).
-- Only admins can INSERT/UPDATE/DELETE.
-*/
-
 CREATE TABLE IF NOT EXISTS public.employees (
   id              uuid PRIMARY KEY DEFAULT gen_random_uuid(),
   profile_id      uuid UNIQUE REFERENCES public.profiles(id) ON DELETE CASCADE,
