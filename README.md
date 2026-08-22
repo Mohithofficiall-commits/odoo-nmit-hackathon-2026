@@ -29,7 +29,7 @@
 ## 🔗 Live Demo Model
 
 <p align="center">
-  <a href="https://human-resource-manag-s0rp.bolt.host">
+  <a href="https://day-flow-hrm.vercel.app/login">
     <img src="https://img.shields.io/badge/▶ Launch Live App-4F46E5?style=for-the-badge" alt="live demo" />
   </a>
   <a href="https://github.com/Mohithofficiall-commits/odoo-nmit-hackathon-2026/tree/main">
