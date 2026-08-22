@@ -1,9 +1,3 @@
-/*
-# Dayflow HRMS — Helper function
-
-Creates is_admin() helper that reads role from JWT app_metadata.
-*/
-
 CREATE OR REPLACE FUNCTION public.is_admin()
 RETURNS boolean
 LANGUAGE sql
