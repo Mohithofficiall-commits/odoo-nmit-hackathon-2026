@@ -41,8 +41,8 @@
 
 | Role | Email | Password |
 |---|---|---|
-| Employee | `employee@dayflow.demo` | `Demo@1234` |
-| Admin/HR | `admin@dayflow.demo` | `Demo@1234` |
+| Employee | `admin@dayflow.com` | `admin123` |
+| Admin/HR | `admin@dayflow.com` | `admin123` |
 
 ---
 
