@@ -1,17 +1,3 @@
-/*
-# Dayflow HRMS — Payroll table
-
-Salary structure per employee per month.
-Earnings: base_salary, hra, da, transport_allowance, medical_allowance.
-Deductions: tax_deduction, provident_fund.
-net_salary is a GENERATED column (earnings - deductions).
-
-## Security
-- RLS enabled.
-- Employees SELECT own payroll only.
-- Admins SELECT/INSERT/UPDATE.
-*/
-
 CREATE TABLE IF NOT EXISTS public.payroll (
   id                  uuid PRIMARY KEY DEFAULT gen_random_uuid(),
   employee_id         uuid NOT NULL REFERENCES public.profiles(id) ON DELETE CASCADE,
