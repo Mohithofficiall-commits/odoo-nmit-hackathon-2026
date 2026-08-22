@@ -28,10 +28,10 @@ export default tseslint.config(
     },
 
     rules: {
-      // React Hooks
+
       ...reactHooks.configs.recommended.rules,
 
-      // React Fast Refresh
+
       'react-refresh/only-export-components': [
         'warn',
         {
@@ -39,7 +39,7 @@ export default tseslint.config(
         },
       ],
 
-      // TypeScript / code quality
+
       '@typescript-eslint/no-unused-vars': [
         'warn',
         {
@@ -51,7 +51,7 @@ export default tseslint.config(
 
       '@typescript-eslint/no-explicit-any': 'warn',
 
-      // General JavaScript quality
+ 
       'no-console': 'warn',
       'no-debugger': 'error',
       'no-duplicate-imports': 'error',
