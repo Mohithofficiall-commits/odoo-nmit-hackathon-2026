@@ -29,10 +29,10 @@
 ## 🔗 Live Demo
 
 <p align="center">
-  <a href="https://REPLACE-WITH-YOUR-BOLT-OR-DEPLOY-LINK">
+  <a href="https://human-resource-manag-s0rp.bolt.host">
     <img src="https://img.shields.io/badge/▶ Launch Live App-4F46E5?style=for-the-badge" alt="live demo" />
   </a>
-  <a href="https://github.com/REPLACE-USERNAME/dayflow">
+  <a href="https://github.com/Mohithofficiall-commits/odoo-nmit-hackathon-2026/tree/main">
     <img src="https://img.shields.io/badge/View Repository-181717?style=for-the-badge&logo=github&logoColor=white" alt="repo" />
   </a>
 </p>
@@ -193,8 +193,8 @@ erDiagram
 
 ```bash
 # 1. Clone the repo
-git clone https://github.com/REPLACE-USERNAME/dayflow.git
-cd dayflow
+git clone https://github.com/Mohithofficiall-commits/odoo-nmit-hackathon-2026.git
+cd odoo-nmit-hackathon-2026
 
 # 2. Install dependencies
 npm install
